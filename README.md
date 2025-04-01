@@ -158,4 +158,9 @@ This project is distributed under the GNU General Public License (GPL). See [LIC
 
 For further details on NNPI‑I hardware and software, please refer to:
 - [Intel® Nervana™ NNPI Brief](https://intel.ai/nervana-nnp/nnpi)
-- The LKML discussion referenced above.
+- [HC31 Intel SPH Presentation (2019)](https://old.hotchips.org/hc31/HC31_2.6_Intel_SPH_2019_v3.pdf)
+- [NNP-I Interactive Experience (Mobile, v0.5)](https://community.intel.com/cipcp26785/attachments/cipcp26785/developer-cloud/1633/2/16433-1_NNP-I_Interactive_Experience_Mobile_v0.5.pdf)
+- [NNP-I Announcement Brief (v5.1)](https://community.intel.com/cipcp26785/attachments/cipcp26785/developer-cloud/1633/1/16433-1_NNP-announce_NNP-I_brief_v5.1.pdf)
+- [Intel Spring Hill Microarchitecture](https://en.wikichip.org/wiki/intel/microarchitectures/spring_hill)
+- [Nervana NNP-I 1100 Details](https://en.wikichip.org/wiki/nervana/nnp/nnp-i_1100)
+
