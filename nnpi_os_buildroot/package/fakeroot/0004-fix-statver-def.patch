@@ -1,0 +1,13 @@
+--- host-fakeroot-1.20.2.orig/libfakeroot.c	2025-04-01 09:22:29.137989398 +0200
++++ host-fakeroot-1.20.2/libfakeroot.c	2025-04-01 09:24:32.489130374 +0200
+@@ -76,6 +76,10 @@
+ #undef HAVE_FREMOVEXATTR
+ #endif /* __APPLE__ */
+ 
++#ifndef _STAT_VER
++# define _STAT_VER 3
++#endif
++
+ #ifdef STUPID_ALPHA_HACK
+ #define SEND_STAT(a,b,c) send_stat(a,b,c)
+ #define SEND_STAT64(a,b,c) send_stat64(a,b,c)
