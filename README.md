@@ -14,7 +14,7 @@ The NNPI‑Card Project provides the complete open source stack for Intel® Nerv
   A Buildroot-based OS image designed specifically to run on the NNPI‑I card. Once loaded by the driver, this embedded Linux OS powers the card’s onboard CPU cores and inference compute engines.
 
 - **ICE (Inference Compute Engine) Driver:**  
-  Firmware and software components (collectively referred to as the ICE driver) that manage the specialized inference hardware—12 dedicated Inference Compute Engines (ICEs) and associated on-die memory—to deliver high-throughput, low-latency deep learning inference.
+  Firmware and software components (collectively referred to as the ICE driver) that manage the specialized inference hardware, 12 dedicated Inference Compute Engines (ICEs) and associated on-die memory, to deliver high-throughput, low-latency deep learning inference.
 
 - **User-Space Tools and Libraries:**  
   Components that enable user applications and deep learning frameworks to interface with the card, offloading inference computations to the hardware accelerator.
@@ -34,7 +34,7 @@ The NNPI‑Card Project provides the complete open source stack for Intel® Nerv
   Unlike traditional OS images that run on host systems, the Buildroot-based OS image in this project is loaded into the NNPI‑I card itself. The card’s firmware boots this OS, which in turn provides a runtime environment for the inference compute engines and associated user-space services.
 
 - **Open, Flexible Software:**  
-  The complete software stack—ranging from the low-level kernel driver to high-level user-space libraries—is designed for integration with popular deep learning frameworks (such as TensorFlow, PyTorch, and ONNX). The system supports direct integration or custom backend development for inference acceleration.
+  The complete software stack, ranging from the low-level kernel driver to high-level user-space libraries, is designed for integration with popular deep learning frameworks (such as TensorFlow, PyTorch, and ONNX). The system supports direct integration or custom backend development for inference acceleration.
 
 ## Project Structure
 
@@ -113,7 +113,7 @@ The provided `build_toolchain.sh` script creates a complete Buildroot-based tool
 
 ### Deploying the OS Image to the NNPI‑I Card
 
-When the OS image build completes, the resulting image (typically a CPIO archive) is not intended to run on your host system—it is loaded into the NNPI‑I card. The kernel driver (in the `card_driver` directory) is responsible for loading this OS image into the card at boot time. 
+When the OS image build completes, the resulting image (typically a CPIO archive) is not intended to run on your host system, it is loaded into the NNPI‑I card. The kernel driver (in the `card_driver` directory) is responsible for loading this OS image into the card at boot time. 
 
 - The built OS image is found in `nnpi_os_buildroot/build/images/rootfs.cpio`.
 - This image is loaded into the NNPI‑I card by the driver during initialization, so that the card’s embedded CPU cores run this OS.
