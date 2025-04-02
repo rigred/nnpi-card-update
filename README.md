@@ -69,7 +69,7 @@ Ubuntu packages required:
 
 ```bash
 sudo apt-get update
-sudo apt-get install sed make binutils gcc g++ bash patch gzip bzip2 perl tar cpio python3 unzip rsync libncurses-dev libelf-dev libssl-dev bison libarchive-dev
+sudo apt-get install bc sed make binutils gcc g++ bash patch gzip bzip2 perl tar cpio python3 unzip rsync libncurses-dev libelf-dev libssl-dev bison libarchive-dev
 ```
 
 Ensure corresponding packages for CentOS or other distributions are installed.
